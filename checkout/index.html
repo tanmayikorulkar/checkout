@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+    <header>
+        <h1>Checkout</h1>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#" onclick="showViewCart()">View Cart</a></li>
+            <li><a href="#" onclick="showCoupons()">Coupons</a></li>
+            <li><a href="#" onclick="showBilling()">Billing</a></li>
+        </ul>
+    </nav>
+    
+    <section id="view-cart" style="display: none;">
+        <h2>View Cart</h2>
+        <!-- Cart items and related options go here -->
+        <p><a href="#" onclick="addItems()">Add Items</a></p>
+        <p><a href="#" onclick="removeItems()">Remove Items</a></p>
+        <p><a href="#" onclick="frequentlyBought()">Frequently Bought Together</a></p>
+        <p><a href="#" onclick="estimateTime()">Estimate Time Taken</a></p>
+    </section>
+    
+    <section id="coupons" style="display: none;">
+        <h2>Coupons</h2>
+        <!-- Coupon options go here -->
+        <p><a href="#" onclick="showQuantityBasedCoupon()">Quantity Based</a></p>
+        <p><a href="#" onclick="showSimulatedDiscountCoupon()">Simulated Discount</a></p>
+        <p><a href="#" onclick="showOrderNumberCoupon()">Based on Order Numbers</a></p>
+        <p><a href="#" onclick="showLucky100Coupon()">Lucky 100</a></p>
+    </section>
+    
+    <section id="billing" style="display: none;">
+        <h2>Billing</h2>
+        <!-- Billing information and payment options go here -->
+    </section>
+
+    <script src="script.js"></script> <!-- Link to your JavaScript file -->
+</body>
+</html>
